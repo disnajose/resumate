@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Analysis</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #fffefe, #3C3744);
+            color: #FFDAB9;
+        }
+        .header {
+            background: linear-gradient(135deg, #714B87, #3C3744);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 32px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .container {
+            background: #AAA5A9;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 400px;
+            margin: 50px auto;
+            transition: transform 0.3s;
+            color: #000000;
+        }
+        .container:hover {
+            transform: scale(1.05);
+        }
+        .btn {
+            background: linear-gradient(135deg, #714B87, #3C3744);
+            color: white;
+            padding: 12px;
+            border: none;
+            width: 100%;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            transition: background 0.3s, transform 0.2s;
+            margin-top: 12px;
+        }
+        .btn:hover {
+            background: linear-gradient(135deg, #3C3744, #000000);
+            transform: scale(1.05);
+        }
+        input[type="file"] {
+            padding: 10px;
+            border: 2px solid #714B87;
+            border-radius: 5px;
+            width: 100%;
+            cursor: pointer;
+            text-align: center;
+        }
+        .navbar {
+            background: #3C3744;
+            padding: 15px;
+            text-align: right;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 18px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        .navbar h2 {
+            text-align: left;
+            color: white;
+        }
+        .navbar a:hover {
+            color: #FFDAB9;
+        }
+        .footer {
+            background: linear-gradient(135deg, #714B87, #3C3744);
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            font-size: 14px;
+        }
+        .footer p {
+            margin: 5px 0;
+        }
+        .about {
+            text-align: center;
+            background: white;
+            padding: 40px;
+            padding-bottom: 100px;
+            margin: 20px auto;
+            width: 80%;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        .about h2 {
+            font-size: 28px;
+            color: hsl(236, 72%, 56%);
+        }
+        .about p {
+            font-size: 18px;
+            color: #333;
+            line-height: 1.6;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <h2>RESUMATE</h2>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact us</a>
+    </div>
+    <div class="header">Resume Scoring</div>
+    <div class="container">
+        <h2>Upload Your Resume for Analysis</h2>
+        <form id="resume-upload-form" enctype="multipart/form-data">
+            <label for="resume">Choose Resume (PDF, DOCX):</label>
+            <input type="file" id="resume" name="resume" required>
+            <button class="btn" type="submit">Upload & Analyze</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <div class="about" id="about">
+        <h2>About Us</h2>
+        <p>Unlock your career potential with our resume ranking platform! We analyze your <strong>projects, hackathon experience, skills, and internships</strong> to provide a comprehensive score that helps you stand out in the job market. Get instant feedback, improve your resume, and take your career to the next level.</p>
+    </div>
+    <div class="footer">
+        <p>&copy; 2025 Resume Uploader. All rights reserved.</p>
+        <p>Contact us: <a href="mailto:resumate@gmail.com" style="color: white; text-decoration: none;">resumate@gmail.com</a></p>
+        <p>Phone: +91 987654321</p>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
