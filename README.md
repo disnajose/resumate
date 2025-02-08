@@ -20,7 +20,7 @@ ResuMate is a simple tool that helps job seekers improve their resumes. Users ca
 Many people struggle to make a good resume. They may miss important details or use the wrong format. Without feedback, they don’t know how to improve. A tool is needed to check resumes, give a score, and suggest better ways to improve them
 
 ### The Solution
-ResuMate makes resume building easy and fun! Just upload your resume, and it will check your skills, experience, and format in seconds. You’ll get a score and simple tips to make your resume better.
+ResuMate makes resume building easy and fun! Just upload your resume, and it will check your skills, experience in seconds.analyze latest skills . You’ll get a score and simple tips to make your resume better.
 
 With ResuMate, you can:
 ✅ Get quick feedback on your resume.
@@ -49,53 +49,45 @@ py app.py
 For Software:
 
 # Screenshots (Add at least 3)
-![Screenshot1](Add screenshot 1 here with proper name)
-*Add caption explaining what this shows*
 
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
+![Screenshot (42)](https://github.com/user-attachments/assets/ca6e1d93-199b-4adf-af2d-570b8a54bbcb)
 
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
-
-# Diagrams
-![Workflow](Add your workflow/architecture diagram here)
-*Add caption explaining your workflow*
-
-For Hardware:
-
-# Schematic & Circuit
-![Circuit](Add your circuit diagram here)
-*Add caption explaining connections*
-
-![Schematic](Add your schematic diagram here)
-*Add caption explaining the schematic*
-
-# Build Photos
-![Team](Add photo of your team here)
+*home page*
 
 
-![Components](Add photo of your components here)
-*List out all components shown*
+![Screenshot (43)](https://github.com/user-attachments/assets/60496782-fa67-4c94-a134-afa15e9f659a)
+ *Resume file uploaded*
 
-![Build](Add photos of build process here)
-*Explain the build steps*
 
-![Final](Add photo of final product here)
-*Explain the final build*
+![Screenshot (44)](https://github.com/user-attachments/assets/8e9f38dd-f892-4c69-b19e-80a706c3d13a)
+
+*resume analysis of latest technologies*
+
+
+
+
 
 ### Project Demo
 # Video
-[Add your demo video link here]
+
+
+
+
+https://github.com/user-attachments/assets/6c6b7c50-8832-4070-a133-c25052bad6f8
+
+
+https://github.com/user-attachments/assets/c1970d37-d9c2-4694-9ce6-eff2dc02d5ed
+
+
+
 *Explain what the video demonstrates*
 
-# Additional Demos
-[Add any extra demo materials/links]
+
 
 ## Team Contributions
-- [Name 1]: [Specific contributions]
-- [Name 2]: [Specific contributions]
-- [Name 3]: [Specific contributions]
+- Shahna Sanah: database
+- Ranah: Frontend
+- Disna Jose: backend
 
 ---
 Made with ❤️ at TinkerHub
